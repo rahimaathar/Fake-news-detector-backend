@@ -5,6 +5,8 @@ __pycache__/
 
 # Model files
 *.pkl
+!vectorizer.pkl
+!model.pkl
 
 # Logs
 *.log
