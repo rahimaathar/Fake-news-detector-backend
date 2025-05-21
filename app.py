@@ -273,7 +273,7 @@ def predict():
 
 if __name__ == '__main__':
     if load_model():
-        app.run(port=5001, debug=True)
+        app.run(host='0.0.0.0', port=5001, debug=False, threaded=True)
     else:
         logger.error("Failed to start application: Model could not be loaded")
 
